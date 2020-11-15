@@ -9,16 +9,16 @@ def custom_handler500(request):
 
 
 def custom_handler404(request, exception):
-    return HttpResponseNotFound('Ой, что то сломалось... Простите извините!')
+    return HttpResponseNotFound('Страница не найдена!')
 
 
-def MainView(request):
+def main_view(request):
     return render(request, 'index.html')
 
 
-def DepartureView(request, departure):
+def departure_view(request, departure):
     return render(request, 'departure.html')
 
 
-def TourView(request, id):
+def tour_view(request, id):
     return render(request, 'tour.html')
